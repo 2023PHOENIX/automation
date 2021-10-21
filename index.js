@@ -78,7 +78,7 @@ async function run(){
     await page.type("input#moderator",config.moderator,{delay : 50});
 
     await page.waitForSelector("button.moderator-save");
-    await page.click("button.moderator-save");
+    await page.click("button.moderator-save",{delay : 300});
 
     // await page.waitForSelector("input#moderator");
     // await page.click("input#moderator");
